@@ -17,7 +17,7 @@ const Herosection = () => {
         of the Galaxy
       </h1>
       <div className="flex items-center gap-4 text-gray-300">
-        <span>Action | Adventure | Sci-Fi</span>
+        <span>Action | Adventure | Sci-Ti</span>
         <div className="flex items-center gap-1">
           <CalendarIcon className="w-4.5 h-4.5 " />
           2018
