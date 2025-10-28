@@ -35,6 +35,16 @@ const TrailerSection = () => {
       className="w-full h-full rounded-2xl"
     />
   </div>
+
+<div className='group grid grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto'>
+{dummyTrailers.map((trailer) => (
+<div>
+  <img src={trailer.image} alt="trailer" className='rounded-lg w-full
+  h-full object-cover brightness-75'/>
+</div>  
+))}
+</div>
+
 </div>
 
       </div>
