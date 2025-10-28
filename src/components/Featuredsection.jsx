@@ -2,6 +2,8 @@ import { ArrowRight } from 'lucide-react';
 import React, { use } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Blurcircle from './Blurcircle';
+import { dummyShowsData } from '../assets/assets';
+import Moviecard from './Moviecard';
 
 const Featuredsection = () => {
     const navigate =useNavigate();
@@ -17,7 +19,11 @@ const Featuredsection = () => {
         </button>
       </div>
 
-      <div></div>
+      <div className='flex flex-wrap max-sm:justify-center  gap-8 mt-8'>
+        {dummyShowsData.slice(0,4).map((show)=>(
+          <Moviecard key={show._id} movie={show}/>
+          ))}
+      </div>
 
 
       <div className='flex justify-center mt-20'>
